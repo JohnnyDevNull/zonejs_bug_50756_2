@@ -13,14 +13,22 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "my-lib": [
+        "projects/my-lib/src/public-api.ts",
+        "dist/my-lib",
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
+    "target": "es2015",
+    "module": "esnext",
     "useDefineForClassFields": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
     "lib": [
-      "ES2022",
+      "es2017",
       "dom"
     ]
   },
